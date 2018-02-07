@@ -461,3 +461,14 @@ Completed 200 OK in 582ms (Views: 566.9ms | ActiveRecord: 0.0ms)
   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
 Started GET "/posts/new" for 127.0.0.1 at 2018-02-07 13:13:06 +0000
 Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 445ms (Views: 421.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/posts/new" for 127.0.0.1 at 2018-02-07 13:13:06 +0000
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
